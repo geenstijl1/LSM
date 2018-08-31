@@ -1,3 +1,39 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// TELEFONOS
+@media only screen and(max-width: 540px) {
+  .container {
+    padding: 40px;
+  }
+  .card {
+    margin-bottom: 25px !important;
+  }
+}
+//TABLETS
+@media only screen and(min-width: 540px) {
+  .card {
+    margin-bottom: 5px !important;
+  }
+}
+
+//COMPUTADORAS
+@media only screen and(min-width: 1024px) {
+  .main {
+    transform: translate(3vh, 15vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 18rem;
+    height: 18rem;
+    padding: 20px;
+    margin: 10px;
+  }
+  .card:hover {
+    background: orange;
+    transition: 0.8s ease-out;
+  }
+
+}
+
