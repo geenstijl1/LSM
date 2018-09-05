@@ -1,13 +1,97 @@
 @import "bootstrap";
-@import 'home';
+@import "home";
+@import "games";
 
-body {
-  background: rgba(73,155,234,1);
-  background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
-  background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-  background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-  background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+// TELEFONOS
+@media only screen and(max-width: 540px) {
+  body {
+    background-image: url('https://nahuatlutecweb.webcindario.com/img/diseno-plano-flat-design-paisaje-nubes-sol-montanas-ilustracion-Fondos-de-Pantalla-HD-professor-falken.com_.png');
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-color: rgba(60,60,60, 0.5);
+    background-blend-mode: soft-light;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .card {
+    width: 18rem;
+    height: 18rem;
+    padding: 20px;
+    margin: 10px;
+    transform: translateX(7vw);
+  }
+  .card:hover {
+    transition: 0.8s ease-out;
+  }
 }
+
+//TABLETS
+@media only screen and(min-width: 540px) {
+  body {
+    background-image: url('https://nahuatlutecweb.webcindario.com/img/diseno-plano-flat-design-paisaje-nubes-sol-montanas-ilustracion-Fondos-de-Pantalla-HD-professor-falken.com_.png');
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-color: rgba(60,60,60, 0.5);
+    background-blend-mode: soft-light;
+
+  }
+
+  .card {
+    width: 18rem;
+    height: 18rem;
+    padding: 20px;
+    margin: 10px;
+    transform: translateX(7vw);
+  }
+  .card:hover {
+    transition: 0.8s ease-out;
+  }
+}
+
+//COMPUTADORAS
+@media only screen and(min-width: 1024px) {
+  body {
+    background-image: url('https://nahuatlutecweb.webcindario.com/img/diseno-plano-flat-design-paisaje-nubes-sol-montanas-ilustracion-Fondos-de-Pantalla-HD-professor-falken.com_.png');
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-color: rgba(60,60,60,0.5);
+    background-blend-mode: soft-light;
+
+  }
+
+  .main {
+    display: flex;
+    transform: translate(-5vw, 25vh);
+    justify-content: center;
+    align-items: center;
+  }
+  .card:hover {
+    transition: 0.8s ease-in;
+    width: 20rem;
+    height: 20rem;
+
+  }
+}
+
+.back-arrow {
+  position: absolute;
+  transform: translateX(85vw);
+}
+.card {
+  width: 18rem;
+  height: 18rem;
+  padding: 20px;
+  margin: 10px;
+  background: rgba(252,252,130,1);
+  background: -moz-linear-gradient(left, rgba(252,252,130,1) 0%, rgba(255,208,107,1) 92%, rgba(255,208,107,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,252,130,1)), color-stop(92%, rgba(255,208,107,1)), color-stop(100%, rgba(255,208,107,1)));
+  background: -webkit-linear-gradient(left, rgba(252,252,130,1) 0%, rgba(255,208,107,1) 92%, rgba(255,208,107,1) 100%);
+  background: -o-linear-gradient(left, rgba(252,252,130,1) 0%, rgba(255,208,107,1) 92%, rgba(255,208,107,1) 100%);
+  background: -ms-linear-gradient(left, rgba(252,252,130,1) 0%, rgba(255,208,107,1) 92%, rgba(255,208,107,1) 100%);
+  background: linear-gradient(to right, rgba(252,252,130,1) 0%, rgba(255,208,107,1) 92%, rgba(255,208,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfc82', endColorstr='#ffd06b', GradientType=1 );
+}
+
